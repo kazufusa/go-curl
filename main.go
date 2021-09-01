@@ -19,7 +19,7 @@ func (ss *stringSlice) Set(s string) error {
 }
 
 var (
-	x  = flag.String("x", "GET", "method")
+	x  = flag.String("X", "GET", "method")
 	d  = flag.String("d", "", "request body")
 	v  = flag.Bool("v", false, "show request")
 	hs stringSlice

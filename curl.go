@@ -48,12 +48,12 @@ func (c *Curl) ResponseBody() (string, error) {
 }
 
 func (c *Curl) AddHeader(s string) {
-	_s := strings.Split(s, "=")
+	_s := strings.Split(s, ":")
 	if len(_s) < 2 {
 		return
 	}
 	key := _s[0]
-	value := strings.Join(_s[1:], "")
+	value := strings.Join(_s[1:], ":")
 	c.req.Header.Add(key, value)
 }
 
