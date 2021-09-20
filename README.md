@@ -2,16 +2,16 @@
 
 ```sh
 $ go run . -h
-Usage of /tmp/go-build3191817544/b001/exe/go-curl:
+Usage of /tmp/go-build1315041661/b001/exe/go-curl:
   -H value
-        request header
-  -d string
-        request body
-  -v    show request
+    	request header
   -X string
-        method (default "GET")
+    	method (default "GET")
+  -d string
+    	request body
+  -v	show request
 
-$ go run . -x GET -v -d "{}" -H aaa=bbb -H ccc=ddd:eee example.com
+$ go run . -X GET -v -d "{}" -H aaa:bbb -H ccc:ddd:eee example.com
 GET / HTTP/1.1
 Host: example.com
 Aaa: bbb
